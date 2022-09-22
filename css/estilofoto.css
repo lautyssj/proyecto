@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(#663300,#5f4811)no-repeat;
+}
+#contenedor_foto{
+    width: 900px;
+    height: 600px;
+    margin:auto;
+}
+#flecha_izquierda{
+    width: 150px;
+    height: 600px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+    line-height: 400px;
+}
+
+    /*line-height para centrar texto o flechas en este caso, hay que poner la mitad del contenedor*/
+#foto{
+    width: 600px;
+    height: 600px;
+    float:left;
+    text-align: center;
+    
+}    
+.ver_foto{
+    height: 400px;
+    padding-top: 20px;
+}
+#flecha_derecha{
+    width: 150px;
+    height: 600px;
+    float:left;
+    font-size: 50px;
+    text-align: center;
+    line-height: 400px;   
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #8b4513;
+}
+
+

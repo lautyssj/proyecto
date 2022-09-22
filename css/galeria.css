@@ -1,0 +1,29 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+h2{
+    text-align: center;
+}
+.producto{
+    width: 125px;
+    height: 125px;
+    padding: 0px 10px;
+}
+.producto_foto{
+    float: left;
+    text-align: center; 
+    border: 1px solid #ffd700;
+    /*margin: 2px 2px 2px 2px;*/
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.producto_foto:hover{
+    border: 1px solid #8B6D07;
+    box-shadow: 2px 5px 8px #603F0B;
+}

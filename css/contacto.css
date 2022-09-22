@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+article{
+    background: #663300;
+    text-align: center;
+
+}
+#titulo_form{
+    color: #ff0;
+}
+#mi_formulario{
+    background: #f4a460;
+    margin: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 4px double #ff0;
+    border-radius: 8px;
+}
+p{
+    font-family: arial;
+    font-size: 16px;
+    color: #663300;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+input, textarea {
+    width: 400px;
+    height: 40px;
+}
+.boton{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #663300;
+    color: #fff;
+}
+.boton:hover{
+    background: #ff0;
+    color:#663300;
+    box-shadow: 2px 2px 4px #ffffe0;
+}

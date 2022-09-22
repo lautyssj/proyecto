@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+#menu{
+    /*Saco las viñetas*/
+    list-style-type: none;
+    width: 200px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 13px;
+    /*Coloco cada LI uno al lado del otro */
+    display:flex;
+}
+#menu li{
+   /* background: #000;*/
+    /* Coloco margen de arriba para que quede centrado */
+    margin-top: 15px;
+    width: 150px;
+
+}
+#menu a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 14px 14px;
+}
+#menu a:hover, #menu li:hover{
+    background: chocolate;
+    color: #ff0;
+    border-radius: 5px;
+    box-shadow: 2px 0px 2px #999;
+}

@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    background: #26c9ff;
+}
+.contenedor > *{
+    box-shadow: -1px 1px 7px 0px  rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 10px;
+    
+}
+
+.header{
+    grid-area: header;
+    background: #85eedd;
+    background: url(../imagenes/banner.png) center no-repeat;
+    background-size: contain;
+   border-radius: 4px;
+}
+
+.header #ico-face,
+.header #ico-ig{
+    float: left;
+    padding-bottom:5px;
+    grid-area: header;
+    
+
+}
+
+#ico-face:hover,.ico-ig:hover {
+    box-shadow: 2px 2px 2px white;
+}
+
+.navbar{
+    grid-area: navbar;
+    background: #cd5c5c;
+
+}
+.navbar ul{
+    flex-direction: column;
+}
+.navbar ul li{
+    padding: 10px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: #6a5acd;
+    font-family: arial;
+    font-size: 18px;
+    float:left;
+}
+.sidebar h1{
+    padding: 10px;
+}
+.sidebar ul{
+    list-style-type: none; 
+}
+.sidebar ul li{
+    padding: 10px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color:#000066;
+    font-weight: 700;
+}
+.sidebar ul li a:hover{
+    color: #7AFF4D;
+}
+.principal{
+    grid-area: principal;
+    background: #dda0dd;
+    float: left;
+    font-family: arial;
+    font-size: 18px;
+    color: #456789;
+}
+.principal h1, h2, p{
+    padding: 10px;
+}
+.foto{
+    width: 90px;
+    height: 100px;
+    float:right;
+    margin:10px;
+}
+.footer{
+    grid-area: footer;
+    background: #aaf;
+    font-family: arial;
+    font-size: 20px;
+    color: #c71585;
+    padding: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+}
+footer a:hover{
+    color: #fff;
+}
+.info{
+    font-family: arial;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    position:relative;
+    left: auto;
+}
+.contenedor{
+    /*convierto en un grid todo*/
+    display:grid;
+    /*le doy una separacion a todos los integrantes del grid*/
+    grid-gap: 10px;
+    grid-template: 
+        
+        "header" 200px
+        "navbar"50px
+        "sidebar" 100px
+        "principal" auto 
+        "footer" 200px;
+ }
+@media(min-width: 500px){
+    .contenedor{
+       
+        grid-template: 
+            "header header"200px
+            "navbar navbar" 50px
+            "sidebar principal" auto
+            "footer footer" 200px /
+            200px auto;
+    }
+    #face{
+    width:20px;
+    height:20px;
+    position: left;
+    bottom: auto;    
+    left: 700px;
+    margin-top: 10px;
+   }
+   #ig{
+    width: 20px;
+    height: 20px;
+    position:left;
+    bottom: auto;   
+    left:800px;
+    margin-top: 10px;
+       
+   }
+    
+}
+@media(min-width: 768px){
+    .contenedor{
+              grid-template: 
+            "header header header" 200px
+            "navbar principal sidebar" auto
+            "footer footer footer" 200px /
+            200px auto 200px;
+    }
+    
+}
